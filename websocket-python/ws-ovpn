@@ -4,7 +4,7 @@ import socket, threading, select, sys, time, getopt
 
 # Listen default, override by parse_args
 LISTENING_ADDR = '0.0.0.0'
-LISTENING_PORT = 1194
+LISTENING_PORT = 2096
 PASS = ''
 
 BUFLEN = 4096 * 4

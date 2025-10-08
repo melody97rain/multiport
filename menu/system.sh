@@ -121,7 +121,7 @@ message-ssh
 wget -q -O /usr/bin/swapram "https://raw.githubusercontent.com/melody97rain/swapram/main/swapram.sh" && chmod +x /usr/bin/swapram && swapram
 ;;
 66)
-git clone https://github.com/melody97rain/noobzvpns.git && cd noobzvpns && chmod +x install.sh && ./install.sh
+rm -rf noobzvpns;git clone https://github.com/melody97rain/noobzvpns.git && cd noobzvpns && chmod +x install.sh && ./install.sh
 ;;
 77)
 cd noobzvpns && chmod +x uninstall.sh && ./uninstall.sh

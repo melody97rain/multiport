@@ -49,12 +49,8 @@ echo -e "   \e[$number (18)\e[m \e[$below Check CPU & RAM\e[m"
 echo -e "   \e[$number (19)\e[m \e[$below Change Banner SSH\e[m"
 echo -e "   \e[$number (20)\e[m \e[$below SwapRAM Menu \e[m"
 echo -e ""
-echo -e "   \e[$number (55)\e[m \e[$below Install Noobzvpns\e[m"
-echo -e "   \e[$number (66)\e[m \e[$below Uninstall Noobzvpns\e[m"
-echo -e ""
-echo -e "   \e[$number (77)\e[m \e[$below Install SlowDNS\e[m"
-echo -e "   \e[$number (88)\e[m \e[$below Install UDP Custom\e[m"
-echo -e "   \e[$number (99)\e[m \e[$below Xray-core Changer\e[m"
+echo -e "   \e[$number (77)\e[m \e[$below Install UDP Custom\e[m"
+echo -e "   \e[$number (88)\e[m \e[$below Xray-core Changer\e[m"
 echo -e "   \e[$line════════════════════════════════════════\e[m"
 echo -e "   \e[$back_text \e[$box x)   MENU                             \e[m"
 echo -e "   \e[$line════════════════════════════════════════\e[m"
@@ -122,19 +118,10 @@ message-ssh
 20)
 wget -q -O /usr/bin/swapram "https://raw.githubusercontent.com/melody97rain/swapram/main/swapram.sh" && chmod +x /usr/bin/swapram && swapram
 ;;
-55)
-wget -q https://raw.githubusercontent.com/NiLphreakz/noobzvpns/main/m-noobz && chmod +x m-noobz && ./m-noobz
-;;
-66)
-cd noobzvpns/ && sh ./uninstall.sh && cd && rm -r noobzvpns && rm -r /usr/bin/nnoobz && reboot
-;;
 77)
-wget https://raw.githubusercontent.com/melody97rain/addon/main/slowdns/slowdns.sh && chmod +x slowdns.sh && sed -i 's/\r$//' slowdns.sh && ./slowdns.sh
-;;
-88)
 wget https://raw.githubusercontent.com/melody97rain/addon/main/udp-custom/udp.sh && bash udp.sh
 ;;
-99)
+88)
 wget -q -O /usr/bin/xraychanger "https://raw.githubusercontent.com/NiLphreakz/XrayCore-Custompath/main/xraychanger.sh" && chmod +x /usr/bin/xraychanger && xraychanger
 ;;
 x)

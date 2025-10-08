@@ -49,8 +49,10 @@ echo -e "   \e[$number (18)\e[m \e[$below Check CPU & RAM\e[m"
 echo -e "   \e[$number (19)\e[m \e[$below Change Banner SSH\e[m"
 echo -e "   \e[$number (20)\e[m \e[$below SwapRAM Menu \e[m"
 echo -e ""
-echo -e "   \e[$number (77)\e[m \e[$below Install UDP Custom\e[m"
-echo -e "   \e[$number (88)\e[m \e[$below Xray-core Changer\e[m"
+echo -e "   \e[$number (66)\e[m \e[$below Install Noobzvpn\e[m"
+echo -e "   \e[$number (77)\e[m \e[$below Uninstall Noobzvpn\e[m"
+echo -e "   \e[$number (88)\e[m \e[$below Install UDP Custom\e[m"
+echo -e "   \e[$number (99)\e[m \e[$below Xray-core Changer\e[m"
 echo -e "   \e[$line════════════════════════════════════════\e[m"
 echo -e "   \e[$back_text \e[$box x)   MENU                             \e[m"
 echo -e "   \e[$line════════════════════════════════════════\e[m"
@@ -118,6 +120,8 @@ message-ssh
 20)
 wget -q -O /usr/bin/swapram "https://raw.githubusercontent.com/melody97rain/swapram/main/swapram.sh" && chmod +x /usr/bin/swapram && swapram
 ;;
+66)
+
 77)
 wget https://raw.githubusercontent.com/melody97rain/addon/main/udp-custom/udp.sh && bash udp.sh
 ;;

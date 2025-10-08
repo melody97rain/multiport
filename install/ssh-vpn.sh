@@ -418,6 +418,7 @@ chmod +x dns
 chmod +x nf
 chmod +x netf
 chmod +x ins-helium
+sed -i 's/\r$//' /usr/bin/menu-noobzvpn
 echo "0 1 * * * root delete" >> /etc/crontab
 echo "0 2 * * * root xp" >> /etc/crontab
 echo "0 5 * * * root reboot" >> /etc/crontab

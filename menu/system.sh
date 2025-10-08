@@ -121,11 +121,15 @@ message-ssh
 wget -q -O /usr/bin/swapram "https://raw.githubusercontent.com/melody97rain/swapram/main/swapram.sh" && chmod +x /usr/bin/swapram && swapram
 ;;
 66)
-
+git clone https://github.com/melody97rain/noobzvpns.git && cd noobzvpns && chmod +x install.sh && ./install.sh
+;;
 77)
-wget https://raw.githubusercontent.com/melody97rain/addon/main/udp-custom/udp.sh && bash udp.sh
+cd noobzvpns && chmod +x uninstall.sh && ./uninstall.sh
 ;;
 88)
+wget https://raw.githubusercontent.com/melody97rain/addon/main/udp-custom/udp.sh && bash udp.sh
+;;
+99)
 wget -q -O /usr/bin/xraychanger "https://raw.githubusercontent.com/NiLphreakz/XrayCore-Custompath/main/xraychanger.sh" && chmod +x /usr/bin/xraychanger && xraychanger
 ;;
 x)

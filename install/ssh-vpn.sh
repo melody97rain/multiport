@@ -313,6 +313,7 @@ netfilter-persistent reload
 cd /usr/bin
 wget -O add-host "https://raw.githubusercontent.com/${GitUser}/multiport/main/system/add-host.sh"
 wget -O about "https://raw.githubusercontent.com/${GitUser}/multiport/main/system/about.sh"
+wget -O menu-noobzvpn "https://raw.githubusercontent.com/${GitUser}/multiport/main/system/menu-noobzvpn.sh"
 wget -O menu "https://raw.githubusercontent.com/${GitUser}/multiport/main/menu.sh"
 wget -O add-ssh "https://raw.githubusercontent.com/${GitUser}/multiport/main/add-user/add-ssh.sh"
 wget -O trial "https://raw.githubusercontent.com/${GitUser}/multiport/main/add-user/trial.sh"
@@ -365,6 +366,7 @@ wget -O netf "https://raw.githubusercontent.com/${GitUser}/multiport/main/system
 wget -O ins-helium "https://raw.githubusercontent.com/${GitUser}/multiport/main/system/ins-helium.sh"
 chmod +x add-host
 chmod +x menu
+chmod +x menu-noobzvpn
 chmod +x add-ssh
 chmod +x trial
 chmod +x del-ssh

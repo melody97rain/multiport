@@ -360,7 +360,6 @@ wget -O themes "https://raw.githubusercontent.com/${GitUser}/multiport/main/menu
 wget -O update "https://raw.githubusercontent.com/${GitUser}/multiport/main/update/update.sh"
 wget -O run-update "https://raw.githubusercontent.com/${GitUser}/multiport/main/update/run-update.sh"
 wget -O message-ssh "https://raw.githubusercontent.com/${GitUser}/multiport/main/update/message-ssh.sh"
-wget -O nf "https://raw.githubusercontent.com/${GitUser}/multiport/main/system/nf.sh"
 wget -O dns "https://raw.githubusercontent.com/${GitUser}/multiport/main/system/dns.sh"
 wget -O netf "https://raw.githubusercontent.com/${GitUser}/multiport/main/system/netf.sh"
 wget -O ins-helium "https://raw.githubusercontent.com/${GitUser}/multiport/main/system/ins-helium.sh"
@@ -415,7 +414,6 @@ chmod +x update
 chmod +x run-update
 chmod +x message-ssh
 chmod +x dns
-chmod +x nf
 chmod +x netf
 chmod +x ins-helium
 sed -i 's/\r$//' /usr/bin/menu-noobzvpn

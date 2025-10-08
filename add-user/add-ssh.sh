@@ -112,10 +112,10 @@ exp=$(/usr/bin/chage -l "$Login" | grep "Account expires" | awk -F": " '{print $
 
 cat > /home/vps/public_html/ssh-$Login.txt << EOF
 ====================================================================
-             P R O J E C T  O F  N E V E R M O R E S S H
+             P R O J E C T  O F  N I L P H R E A K Z V P N
                        [Freedom Internet]
 ====================================================================
-            https://github.com/‎NiLphreakz/sapphire
+            https://github.com/‎NiLphreakz/
 ====================================================================
               Format SSH OVPN Account - SPv2
 ====================================================================
@@ -129,13 +129,13 @@ Created          : $harini
 Expired          : $exp1
 ====================================================================
 Domain           : $domain
-Name Server(NS)  : $nsdomain1
-Pubkey           : $pubkey1
+#Name Server(NS)  : $nsdomain1
+#Pubkey           : $pubkey1
 IP/Host          : $MYIP
 OpenSSH          : 22
 Dropbear         : 143, 109
 SSL/TLS          : $ssl
-SlowDNS          : 22,80,443,53,5300
+#SlowDNS          : 22,80,443,53,5300
 SSH-UDP          : 1-65535
 WS SSH(HTTP)     : $wsdropbear
 WS SSL(HTTPS)    : $wsstunnel
@@ -181,13 +181,13 @@ echo -e "Expired          : $exp1"
 echo -e "\e[$line═══════════════════════════════════════════════════════\e[m"
 
 echo -e "Domain           : $domain"
-echo -e "Name Server(NS)  : $nsdomain1"
-echo -e "Pubkey           : $pubkey1"
+#echo -e "Name Server(NS)  : $nsdomain1"
+#echo -e "Pubkey           : $pubkey1"
 echo -e "IP/Host          : $MYIP"
 echo -e "OpenSSH          : 22"
 echo -e "Dropbear         : 143, 109"
 echo -e "SSL/TLS          : $ssl"
-echo -e "SlowDNS          : 22,80,443,53,5300"
+#echo -e "SlowDNS          : 22,80,443,53,5300"
 echo -e "SSH-UDP          : 1-65535"
 echo -e "WS SSH(HTTP)     : $wsdropbear"
 echo -e "WS SSL(HTTPS)    : $wsstunnel"

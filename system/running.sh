@@ -371,7 +371,17 @@ echo -e " Xray Trojan Ws None     : "$green"running"$NC" ✓"
 else
 echo -e " Xray Trojan Ws None     : "$red"not running (Error)"$NC" "
 fi
-
+echo -e ""
+echo -e "\e[1;33mSTATUS NOOBZVPN:\e[0m"
+echo -e "\e[0;34m-----------------\e[0m"
+status="$(systemctl show noobzvpns.service -l --no-page)"
+status_text=$(echo "${status}" | grep 'ActiveState=' | cut -f2 -d=)
+if [ "${status_text}" == "active" ]
+then
+echo -e " Noobzvpn                : "$green"running"$NC" ✓"
+else
+echo -e " Noobzvpn                : "$red"not running (Error)"$NC" "
+fi
 echo -e ""
 echo -e "\e[1;33mSTATUS NGINX & SQUID:\e[0m"
 echo -e "\e[0;34m--------------------\e[0m"

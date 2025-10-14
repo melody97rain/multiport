@@ -4,12 +4,12 @@
 
 
 
- <h2 align="center">AutoScriptVPN <img src="https://img.shields.io/badge/Version-Stabil_2.0-purple.svg"></h2>
+ <h2 align="center">AutoScriptVPN <img src="https://img.shields.io/badge/Version-Stabil_3.0-purple.svg"></h2>
 
 
 <h2 align="center"> Supported Linux Distribution</h2>
 <p align="center"><img src="https://d33wubrfki0l68.cloudfront.net/5911c43be3b1da526ed609e9c55783d9d0f6b066/9858b/assets/img/debian-ubuntu-hover.png"width="400"></p>
-<p align="center"><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%209&message=Stretch&color=purple"> <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%2010&message=Buster&color=purple">  <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=ubuntu&label=Ubuntu%2018&message=Lts&color=red"> <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=ubuntu&label=Ubuntu%2020&message=Lts&color=red">
+<p align="center"><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%2012&message=Bookworm&color=purple"> <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%2013&message=Trixie&color=purple">  <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=ubuntu&label=Ubuntu%2024&message=Focal&color=red"> <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=ubuntu&label=Ubuntu%2025&message=Beta&color=red">
 </p>
 
 <p align="center">
@@ -29,10 +29,9 @@
   
 ## ⚠️ System Requirements ⚠️
 1. Minimum 1GB RAM
-2. Recommended Debian 10 for fast installation. Ubuntu if you want to use slowDNS but error SSH Websocket.
-3. Tested for VPS Melbi, Digital Ocean, and Centerhop.
-4. Xray-Core v1.7.5 or lower requirements for this script. Latest Xray-Core will not support XTLS.
-5. No more updates and this thread has been discontinued. TQ
+2. Support Debian/Ubuntu Old & Latest OS
+3. Xray-Core v1.7.5 or lower requirements for this script. Latest Xray-Core will not support XTLS.
+4. This is latest script remodded by NiLphreakz
 
 ## ♦️Update & Upgrade First Your VPS for Debian 10 & 11♦️
 

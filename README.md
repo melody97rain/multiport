@@ -87,7 +87,6 @@ apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://ra
   - OpenVPN                 : TCP 1194, UDP 2200, SSL 110
   - Stunnel4                : 222, 777
   - Dropbear                : 442, 109
-  - SlowDNS                 : 22, 80, 443, 53, 5300
   - SSH-UDP                 : 1-65535
   - OHP Dropbear            : 8585
   - OHP SSH                 : 8686
@@ -95,6 +94,8 @@ apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://ra
   - Websocket SSH(HTTP)     : 80
   - Websocket SSL(HTTPS)    : 443, 222
   - Websocket OpenVPN       : 2084
+  - NoobzVpn(HTTP)          : 8080
+  - NoobzVpn(HTTPS)         : 8443 
   - Squid Proxy             : 3128, 8000
   - Badvpn                  : 7100, 7200, 7300
   - Nginx                   : 81
@@ -121,7 +122,7 @@ apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://ra
    - VPS settings
    - Admin Control
    - Change port
-   - Full Orders For Various Services
+   - Change Dropbear Version
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 

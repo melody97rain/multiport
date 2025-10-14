@@ -1,3 +1,4 @@
+#!/bin/bash
 #wget https://github.com/${GitUser}/
 GitUser="melody97rain"
 #IZIN SCRIPT

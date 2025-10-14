@@ -4,7 +4,7 @@
 
 
 
- <h2 align="center">AutoScriptVPN <img src="https://img.shields.io/badge/Version-Stabil_3.0-purple.svg"></h2>
+ <h2 align="center">AutoScriptVPN <img src="https://img.shields.io/badge/Version-Stable_3.0-purple.svg"></h2>
 
 
 <h2 align="center"> Supported Linux Distribution</h2>

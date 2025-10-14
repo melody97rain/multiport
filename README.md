@@ -33,7 +33,7 @@
 3. Xray-Core v1.7.5 or lower requirements for this script. Latest Xray-Core will not support XTLS.
 4. This is latest script remodded by NiLphreakz
 
-## ♦️Update & Upgrade First Your VPS for Debian 10 & 11♦️
+## ♦️Update & Upgrade First Your VPS for Debian♦️
 
   ```html
   apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot
@@ -47,7 +47,7 @@
 
   ```
 
-## ♦️Update & Upgrade First Your VPS for Ubuntu 18.04 & 20.04♦️
+## ♦️Update & Upgrade First Your VPS for Ubuntu♦️
 
   ```html
   apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && sleep 2 && reboot
@@ -61,7 +61,7 @@
   ```
  
  
-## ♦️INSTALLATION SCRIPT ( Recommended Debian 10 )♦️
+## ♦️INSTALLATION SCRIPT♦️
 ipv4 only
   ```html
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://raw.githubusercontent.com/melody97rain/multiport/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh

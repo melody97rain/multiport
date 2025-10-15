@@ -99,75 +99,80 @@ cat> /usr/local/etc/xray/config.json << END
     "access": "/var/log/xray/access.log",
     "error": "/var/log/xray/error.log",
     "loglevel": "info"
-       },
-    "inbounds": [
-        {
+  },
+  "inbounds": [
+    {
       "listen": "127.0.0.1",
-      "port": 10085, # CEK USER QUOTA
+      "port": 10085,
       "protocol": "dokodemo-door",
       "settings": {
         "address": "127.0.0.1"
       },
       "tag": "api"
-            },
+    },
+    {
+      "port": 443,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "684a00fa-c4ef-46ce-adb0-70a8dbc1109a",
+            "flow": "xtls-rprx-direct",
+            "level": 0
+          },
+          {
+            "id": "08571082-dbe7-4dba-ae19-16e67a6021b3",
+            "flow": "xtls-rprx-direct",
+            "level": 0,
+            "email": "nil"
+          }
+        ],
+        "decryption": "none",
+        "fallbacks": [
+          {
+            "name": "sshws.deku.nil07.shop",
+            "dest": 2091,
+            "xver": 1
+          },
+          {
+            "dest": 1211,
+            "xver": 1
+          },
+          {
+            "path": "/vlesswstls",
+            "dest": 1212,
+            "xver": 1
+          },
+          {
+            "path": "/vmesswstls",
+            "dest": 1213,
+            "xver": 1
+          },
+          {
+            "path": "/trojanwstls",
+            "dest": 1214,
+            "xver": 1
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "xtls",
+        "xtlsSettings": {
+          "alpn": ["http/1.1"],
+          "certificates": [
             {
-            "port": 443,
-            "protocol": "vless",
-            "settings": {
-                "clients": [
-                    {
-                        "id": "${uuid}",
-                        "flow": "xtls-rprx-direct",
-                        "level": 0
-#xray-vless-xtls
-                    }
-                ],
-                "decryption": "none",
-                "fallbacks": [
-                    {
-                        "name": "sshws.${domain}", # // SSH WS TLS JNGN CURI BERDOSA!!
-                        "dest": 2091,
-                        "xver": 1
-                    },
-                    {
-                        "dest": 1211, # // TROJAN TCP TLS
-                        "xver": 1
-                    },
-                    {
-                        ""path": "/vlesswstls", # // VMESS WS TLS
-                        "dest": 1212,
-                        "xver": 1
-                    },
-                    {
-                        ""path": "/vmesswstls", # // VLESS WS TLS
-                        "dest": 1213,
-                        "xver": 1
-                    },
-                    {
-                        ""path": "/trojanwstls", # // TROJAN WS TLS
-                        "dest": 1214,
-                        "xver": 1
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "tcp",
-                "security": "xtls",
-                "xtlsSettings": {
-                "alpn": ["http/1.1"],
-                "certificates": [
-                 {
-                 "certificateFile": "/usr/local/etc/xray/xray.crt",
-                  "keyFile": "/usr/local/etc/xray/xray.key"
-                  }
-                ],
-                "minVersion": "1.2",
-                 "cipherSuites": "TLS_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256"
-                }
+              "certificateFile": "/usr/local/etc/xray/xray.crt",
+              "keyFile": "/usr/local/etc/xray/xray.key"
             }
+          ],
+          "minVersion": "1.2",
+          "cipherSuites": "TLS_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256"
         }
-    ],
-    "outbounds": [
+      }
+    }
+  ],
+  "outbounds": [
     {
       "protocol": "freedom",
       "settings": {}

@@ -130,7 +130,7 @@ cat> /usr/local/etc/xray/config.json << END
         "decryption": "none",
         "fallbacks": [
           {
-            "name": "sshws.deku.nil07.shop",
+            "name": "sshws.${domain}",
             "dest": 2091,
             "xver": 1
           },

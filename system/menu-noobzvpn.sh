@@ -42,7 +42,7 @@ edit_config() {
             ;;
         2)
             echo -e "${CYAN}Buka config file location${NC}"
-            sudo nano "$CONFIG_FILE"
+            nano "$CONFIG_FILE"
             ;;
         0)
             return
@@ -259,3 +259,4 @@ while true; do
             ;;
     esac
 done
+
